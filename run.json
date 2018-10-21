@@ -1,0 +1,30 @@
+[[{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "copy", "F:\\evil_file1", "C:\\Users\\Malware\\Desktop\\evil_file1.exe"],
+	"sleep": 10
+},
+{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "C:\\Users\\Malware\\Desktop\\evil_file1.exe"],
+	"sleep": 120
+},
+{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "xcopy", "C:\\Users\\Malware\\Desktop\\Victims", "E:\\", "/e", "/i", "/h", "/y"],
+	"sleep": 10
+}],
+[{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "copy", "F:\\evil_file2", "C:\\Users\\Malware\\Desktop\\evil_file2.exe"],
+	"sleep": 10
+},
+{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "C:\\Users\\Malware\\Desktop\\evil_file2.exe"],
+	"sleep": 120
+},
+{
+	"command": "C:\\Windows\\System32\\cmd.exe",
+	"parameters": ["/C", "xcopy", "C:\\Users\\Malware\\Desktop\\Victims", "E:\\", "/e", "/i", "/h", "/y"],
+	"sleep": 10
+}]]
