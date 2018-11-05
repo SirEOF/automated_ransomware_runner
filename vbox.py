@@ -39,7 +39,7 @@ class Malware:
 					print("Sleep: %s" % (command['sleep']))
 					try:
 						process, stdout, stderr = gs.execute(command['command'], command['parameters'], timeout_ms = 30 * 1000)
-						print stdout
+						print(stdout)
 						time.sleep(int(command['sleep']))
 					except:
 						pass
